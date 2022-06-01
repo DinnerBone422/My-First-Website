@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Johaan</title>
+  <link href="https://fonts.googleapis.com/css?family=Trocchi|Anton" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+
+<!--modules-->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<!--webpage-->
+<div id="app">
+  <div :class="['bg', bg]">
+    <header>
+      <nav>
+        <ul>
+          <li><a class="link-bio" href="#bio" @click="bg = 'bio'">Home</a></li>
+          <li><a class="link-projects" href="#projects" @click="bg = 'projects'">Projects</a></li>
+          <li><a class="link-find-me" href="#findme" @click="bg = 'find-me'">About Me</a></li>
+        </ul>
+      </nav>
+      <div class="transition transition-bio"></div>
+      <div class="transition transition-projects"></div>
+      <div class="transition transition-find-me"></div>
+      <h1>Johaan</h1>
+    </header>
+    <div class="dots dots1"></div>
+    <div class="dots dots2"></div>
+    <main>
+      <transition name="slide-fade" mode="out-in">
+        <p key="bio" v-if="bg==='bio'">
+          <!--Home page-->
+          Home Page <br/><br/>
+          Hey my names Is Johaan,<br/>
+          And this is my Website. This is where I post most of the Games I make. If you would like to see all my Games more than what I've posted here, go on over to my <a class="link" href="https://github.com/JohaanSolo">GitHub</a> page where I post everything I make, sometimes more than just games. I know a little bit of Html and some Javascript and the basic functions of Python. I try my best to experiment and learn more of these languages. If you wanna know more about me head over to the <a class="link" href="#find-me" @click="bg = 'find-me'">About Me</a> page, or if you wanna try out some of my games head over to The <a class="link" href="#projects" @click="bg = 'Projects'">Projects</a> page. A Feedback page is coming soon, But for now if you have any suggestions feel free to DM or message me on any of the social links I have below.<br/>
+          Thanks For Visiting My Website.<br/><br/>
+          Note: About Me page is not complete.
+        </p>
+        <p key="projects" v-if="bg==='projects'">
+          <!--Projects Page-->
+          Projects<br/><br/>
+          Not complete yet, yet. it will be finished soon, I swear.
+        </p>
+        <p key="find-me" v-if="bg==='find-me'">
+          <!--about me page-->
+          About Me<br/><br/>
+          Hi My name is Johaan, And im a 14 Year old kid, I Study as a Year 10 at Roncalli Collage and PLese help me I dont know what to put here
+        </p>
+      </transition>
+      
+      <div id="footer">
+      <hr width=100%>
+      </div>
+      <div id="footer-content">
+        <a class="social1" href="https://discord.gg/vQTZpmcA" target="_blank">
+          <ion-icon name="logo-discord"></ion-icon>
+        </a>
+        
+        <a class="social2" href="https://www.facebook.com/JohaanPaul1234/" target="_blank">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a>
+
+        <a class="social1" href="https://github.com/JohaanSolo" target="_blank">
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+
+        <a class="social2" href="https://www.instagram.com/johaan_paul/" target="_blank">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+
+        <a class="social1" href="https://steamcommunity.com/profiles/76561199037617555/" target="_blank">
+          <ion-icon name="logo-steam"></ion-icon>
+        </a>
+
+        <a class="social2" href="https://www.tiktok.com/@thedeadlyjoe" target="_blank">
+          <ion-icon name="logo-tiktok"></ion-icon>
+        </a>
+
+        <a class="social1" href="https://www.twitch.tv/johaan_solo" target="_blank">
+          <ion-icon name="logo-twitch"></ion-icon>
+        </a>
+
+        <a class="social2" href="https://twitter.com/paul_johaan" target="_blank">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a>
+
+        <a class="social1" href="https://api.whatsapp.com/send?phone=64224240565" target="_blank">
+          <ion-icon name="logo-whatsapp"></ion-icon>
+        </a>
+
+        <a class="social2" href="https://account.xbox.com/en-us/profile?gamertag=ChickenNuget822" target="_blank">
+          <ion-icon name="logo-xbox"></ion-icon>
+        </a>
+
+        <a class="social1" href="https://www.youtube.com/channel/UCORvL_etj1agiFdXrmos_fg" target="_blank">
+          <ion-icon name="logo-youtube"></ion-icon>
+        </a>
+
+        <a class="social2" href="https://mail.google.com/mail/?view=cm&fs=1&to=johaanp2008@gmail.com" target="_blank">
+          <ion-icon name="mail"></ion-icon>
+        </a>
+
+      <!-- add More Social Links here--->
+    </div>
+
+    </main>
+  </div>
+  
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

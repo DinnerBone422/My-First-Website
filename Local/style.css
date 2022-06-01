@@ -1,0 +1,109 @@
+/*
+Note:
+My WebSite's Home Page, About Me Page And Project Pages Uses One CSS File,
+So Any Changes Made Will Effect All Mentioned Pages
+*/
+
+
+/*Effects The Whole Page*/
+html{
+  background-color: #181818;
+  scroll-behavior: smooth;
+}
+
+
+/*All Pages*/
+
+/*Header*/
+.header{
+  /*No Styles Yet*/
+}
+
+
+/*Styles For The Title (My Name / All h1 text)*/
+h1{
+  font-size: 5rem;
+  color:brown;
+  text-align: center;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+
+
+/*Styles For The Links To The Pages*/
+.pages{
+  font-size:x-large;
+  margin: 0 5px;
+  color: lightgray;
+}
+
+.pages:hover{
+  opacity: 0.33;
+}
+
+
+/*links*/
+a{
+  transition: color 0.5s;
+  color: #aaaaaa;
+}
+
+a:hover {
+  color: white;
+}
+
+
+/*Styles For Social Links*/
+.social{
+  color: #aaaaaa;
+  transition: color 0.5s;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.social :hover{
+  color: white;
+}
+
+/*Setings For The ion icon*/
+ion-icon {
+  font-size: 32px;
+}
+
+.footer-content {
+  /*Every thing Bellow The Footer Line*/
+}
+
+
+
+/*Styles For Individual Pages*/
+/*Home-Page*/
+.Home-PFP {
+  margin-left:2%;
+  float:right;
+}
+
+.Home-Blurb {
+  color: white;
+  width: 75%;
+  margin: 0;
+}
+
+
+
+/*AboutMe-Page*/
+.AboutMe-Blurb {
+  color: white;
+}
+
+
+
+/*Projects-Page*/
+.Projects-Blurb {
+  color: white;
+}
+
+/*Some Styles For Projects Page Divs .gameName, .aboutGame and .games*/
+.gameName, .aboutGame, .games{
+  color: white;
+}
