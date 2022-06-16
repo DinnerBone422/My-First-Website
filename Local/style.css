@@ -23,17 +23,23 @@ html{
 /*Styles For The Title (My Name / All h1 text)*/
 h1{
   font-size: 5rem;
+  transition: color 1s;
   color:brown;
   text-align: center;
   margin-top: 0rem;
   margin-bottom: 0rem;
 }
 
+h1:hover {
+  transition: color 0.5s;
+  color: lightgray;
+}
 
 /*Styles For The Links To The Pages*/
 .pages{
   font-size:x-large;
   margin: 0 5px;
+  transition: color 0.5s;
   color: lightgray;
 }
 
@@ -49,6 +55,7 @@ a{
 }
 
 a:hover {
+  transition: color 0.5s;
   color: white;
 }
 
