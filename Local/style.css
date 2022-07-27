@@ -59,7 +59,9 @@ h1:hover {
   box-shadow: 0 9px #999;
 }
 
-.pages:hover {background-color: #3e8e41}
+.pages:hover {
+  background-color: #3e8e41
+}
 
 .pages:active {
   background-color: #3e8e41;
