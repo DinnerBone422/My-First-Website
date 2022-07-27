@@ -36,41 +36,6 @@
     <!--Style Sheet-->
     <link rel="stylesheet" type="text/css" href="https://Johaansolo.github.io/Johaan/Local/style.css">
     <!--Style Sheet-->
-
-
-
-    <script>
-      function includeHTML() {
-        var z, i, elmnt, file, xhttp;
-        /*loop through a collection of all HTML elements:*/
-        z = document.getElementsByTagName("*");
-        for (i = 0; i < z.length; i++) {
-          elmnt = z[i];
-          /*search for elements with a certain atrribute:*/
-          file = elmnt.getAttribute("w3-include-html");
-          if (file) {
-            /*make an HTTP request using the attribute value as the file name:*/
-            xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function() {
-              if (this.readyState == 4) {
-                if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-                if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-                /*remove the attribute, and call this function once more:*/
-                elmnt.removeAttribute("w3-include-html");
-                includeHTML();
-              }
-            }      
-            xhttp.open("GET", file, true);
-            xhttp.send();
-            /*exit the function:*/
-            return;
-          }
-        }
-      };
-      </script>
-
-
-
   </head>
   <body>
 
@@ -92,12 +57,67 @@
         Note: This Website is not complete is not complete.
       </h3>
     </div>
-
-    <div w3-include-html="/Local/footer.html"></div>
-
-    <script>
-      includeHTML();
-      </script>
-      
+    
+    <div id="footer">
+      <hr width=100%>
+    </div>
+    <div id="footer-content">
+  
+      <a class="social" href="https://discord.gg/vQTZpmcA" target="_blank">
+        <ion-icon name="logo-discord"></ion-icon>
+      </a>
+  
+      <a class="social" href="https://www.facebook.com/JohaanPaul1234/" target="_blank">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </a>
+  
+      <a class="social" href="https://github.com/JohaanSolo" target="_blank">
+        <ion-icon name="logo-github"></ion-icon>
+      </a>
+  
+      <a class="social" href="https://www.instagram.com/johaan_paul/" target="_blank">
+        <ion-icon name="logo-instagram"></ion-icon>
+      </a>
+  
+      <a class="social" href="https://steamcommunity.com/profiles/76561199037617555/" target="_blank">
+        <ion-icon name="logo-steam"></ion-icon>
+      </a>
+  
+      <a class="social" href="https://www.tiktok.com/@thedeadlyjoe" target="_blank">
+        <ion-icon name="logo-tiktok"></ion-icon>
+      </a>
+  
+      <a class="social" href="https://www.twitch.tv/johaan_solo" target="_blank">
+        <ion-icon name="logo-twitch"></ion-icon>
+      </a>
+  
+      <a class="social" href="https://twitter.com/paul_johaan" target="_blank">
+        <ion-icon name="logo-twitter"></ion-icon>
+      </a>
+  
+      <a class="social" href="https://api.whatsapp.com/send?phone=64224240565" target="_blank">
+        <ion-icon name="logo-whatsapp"></ion-icon>
+      </a>
+  
+      <a class="social" href="https://account.xbox.com/en-us/profile?gamertag=ChickenNuget822" target="_blank">
+        <ion-icon name="logo-xbox"></ion-icon>
+      </a>
+  
+      <a class="social" href="https://www.youtube.com/channel/UCORvL_etj1agiFdXrmos_fg" target="_blank">
+        <ion-icon name="logo-youtube"></ion-icon>
+      </a>
+  
+      <a class="social" href="https://mail.google.com/mail/?view=cm&fs=1&to=johaanp2008@gmail.com" target="_blank">
+        <ion-icon name="mail"></ion-icon>
+      </a>
+  
+      <!-- add More Social Links here--->
+    </div>
+  
+  
+    <!--Addons-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!--add more addons here-->
   </body>
 </html>
