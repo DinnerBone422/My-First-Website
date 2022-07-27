@@ -34,21 +34,10 @@ h1:hover {
   color: #d3d3d3;
 }
 
-/*Styles For The Links To The Pages
+/*Styles For The Links To The Pages*/
 .pages{
-  font-size:x-large;
-  margin: 0 5px;
-  transition: color 0.5s;
-  color: lightgray;
-}
-
-.pages:hover{
-  opacity: 0.33;
-}
-*/
-.pages {
   padding: 15px 25px;
-  font-size: 24px;
+  font-size:x-large;
   text-align: center;
   cursor: pointer;
   outline: none;
@@ -57,6 +46,10 @@ h1:hover {
   box-shadow: 0 9px #ffffff;
   border: none;
   border-radius: 15px;
+  box-shadow: 0 9px #999;
+  margin: 0 5px;
+  transition: color 0.5s;
+  color: #d3d3d3;
 }
 
 .pages:hover {
@@ -134,6 +127,15 @@ ion-icon {
 .Projects-Blurb {
   color: #ffffff;
 }
+
+
+
+/*Test-Page*/
+.Test-Blurb {
+  color: white;
+}
+
+
 
 /*Some Styles For Projects Page Divs .gameName, .aboutGame and .games*/
 .gameName, .aboutGame, .games{
