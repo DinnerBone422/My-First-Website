@@ -24,14 +24,14 @@ html{
 h1{
   font-size: 5rem;
   transition: color 1s;
-  color:brown;
+  color:#a52a2a;
   text-align: center;
   margin-top: 0rem;
   margin-bottom: 0rem;
 }
 
 h1:hover {
-  color: lightgray;
+  color: #d3d3d3;
 }
 
 /*Styles For The Links To The Pages
@@ -52,20 +52,23 @@ h1:hover {
   text-align: center;
   cursor: pointer;
   outline: none;
-  color: #fff;
-  background-color: #04AA6D;
+  color: #aaaaaa;
+  background-color: #a52a2a;
+  box-shadow: 0 9px #ffffff;
   border: none;
   border-radius: 15px;
-  box-shadow: 0 9px #999;
 }
 
 .pages:hover {
-  background-color: #3e8e41
+  color: #aaaaaa;
+  background-color: #a52a2a;
+  box-shadow: 0 9px #ffffff;
 }
 
 .pages:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
+  color: #aaaaaa;
+  background-color: #892222;
+  box-shadow: 0 5px #999;
   transform: translateY(4px);
 }
 
@@ -78,7 +81,7 @@ a{
 
 a:hover {
   transition: color 0.5s;
-  color: white;
+  color: #ffffff;
 }
 
 
@@ -91,7 +94,7 @@ a:hover {
 }
 
 .social :hover{
-  color: white;
+  color: #ffffff;
 }
 
 /*Setings For The ion icon*/
@@ -113,7 +116,7 @@ ion-icon {
 }
 
 .Home-Blurb {
-  color: white;
+  color: #ffffff;
   width: 75%;
   margin: 0;
 }
@@ -122,17 +125,17 @@ ion-icon {
 
 /*AboutMe-Page*/
 .AboutMe-Blurb {
-  color: white;
+  color: #ffffff;
 }
 
 
 
 /*Projects-Page*/
 .Projects-Blurb {
-  color: white;
+  color: #ffffff;
 }
 
 /*Some Styles For Projects Page Divs .gameName, .aboutGame and .games*/
 .gameName, .aboutGame, .games{
-  color: white;
+  color: #ffffff;
 }
