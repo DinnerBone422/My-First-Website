@@ -34,7 +34,7 @@ h1:hover {
   color: lightgray;
 }
 
-/*Styles For The Links To The Pages*/
+/*Styles For The Links To The Pages
 .pages{
   font-size:x-large;
   margin: 0 5px;
@@ -44,6 +44,27 @@ h1:hover {
 
 .pages:hover{
   opacity: 0.33;
+}
+*/
+.pages {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.pages:hover {background-color: #3e8e41}
+
+.pages:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 
