@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <!--Metadata, Page Title and Page Icon-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My Games</title>
     <link rel="icon" type="image/png" href="https://johaansolo.github.io/Johaan/Assets/Local/Icon.png">
+    <!--Metadata, Page Title and Page Icon-->
+  
+    <!--Addons-->
+    <script src="https://Johaansolo.github.io/Johaan/Page_Projects/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
     <script src="p5.play.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-database.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!--Addons-->
+
+    <!--Firebase-->
     <script>
       const firebaseConfig = {
         apiKey: "AIzaSyAm2x1M7xvMN9_IRIUQC3GlHoeKrHTRNzs",
@@ -24,17 +34,24 @@
       };
       firebase.initializeApp(firebaseConfig);
     </script>
+    <!--Firebase-->
+
+    <!--Style Sheet-->
     <link rel="stylesheet" type="text/css" href="https://Johaansolo.github.io/Johaan/Local/style.css">
+    <!--Style Sheet-->
   </head>
   <body>
 
+    <!--Header Content-->
     <div class="header">
       <h1>Johaan Paul</h1>
       <a class="pages" href="https://Johaansolo.github.io/Johaan/Page_Home/">Home</a>
       <a class="pages" href="https://Johaansolo.github.io/Johaan/Page_Aboutme/">About Me</a>
       <a class="pages" href="https://Johaansolo.github.io/Johaan/Page_Projects/">Games</a>
     </div>
+    <!--Header Content-->
 
+    <!--Main Content-->
     <div class="Projects-Blurb">
       <h2>My Game library</h2>
       <p>Hey This is the Games pages,<br/>
@@ -44,14 +61,15 @@
     <br/><br/>
     <div class="games"></div>
 
-    <!--
-    <div class="gameName">
-      <h2>GameName</h2>
-      <a href="johaansolo.github.io/Johaan/Assets/Projects/Icons/"><img src="https://johaansolo.github.io/Johaan/Assets/Projects/Icons/" width=60% ></a>
-
-      <h4>About The Game</h4>
+    <!--This Is the Add Game Template->
+      
+    <div class="gameName"><h2>Enter The Game Name Here</h2></div>
+    <div class="Create A Class Name For Your Game Used For CSS Styling">
+      <a href="Add Redirect URL Here"><img src="Add Game Display Image URL Here" width=60% ></a>
     </div>
-    -->  
+    <div class="aboutGame"><h4>Write About The Game Here</h4></div>
+
+    <--This Is the Add Game Template-->
 
     <div class="gameName"><h2>The Invasion Of Earth</h2></div>
     <div class="TheInvasionOfEarth">
@@ -140,67 +158,64 @@
     
     <!-- add more games here-->
     </div>
+    <!--Main Content-->
 
+    <!--Footer Content-->
     <div id="footer">
-      <hr width=100%>   
+      <hr width=100%>
     </div>
     <div id="footer-content">
-
+  
       <a class="social" href="https://discord.gg/vQTZpmcA" target="_blank">
         <ion-icon name="logo-discord"></ion-icon>
       </a>
-
+  
       <a class="social" href="https://www.facebook.com/JohaanPaul1234/" target="_blank">
         <ion-icon name="logo-facebook"></ion-icon>
       </a>
-
+  
       <a class="social" href="https://github.com/JohaanSolo" target="_blank">
         <ion-icon name="logo-github"></ion-icon>
       </a>
-
+  
       <a class="social" href="https://www.instagram.com/johaan_paul/" target="_blank">
         <ion-icon name="logo-instagram"></ion-icon>
       </a>
-
+  
       <a class="social" href="https://steamcommunity.com/profiles/76561199037617555/" target="_blank">
         <ion-icon name="logo-steam"></ion-icon>
       </a>
-
+  
       <a class="social" href="https://www.tiktok.com/@thedeadlyjoe" target="_blank">
         <ion-icon name="logo-tiktok"></ion-icon>
       </a>
-
+  
       <a class="social" href="https://www.twitch.tv/johaan_solo" target="_blank">
         <ion-icon name="logo-twitch"></ion-icon>
       </a>
-
+  
       <a class="social" href="https://twitter.com/paul_johaan" target="_blank">
         <ion-icon name="logo-twitter"></ion-icon>
       </a>
-
+  
       <a class="social" href="https://api.whatsapp.com/send?phone=64224240565" target="_blank">
         <ion-icon name="logo-whatsapp"></ion-icon>
       </a>
-
+  
       <a class="social" href="https://account.xbox.com/en-us/profile?gamertag=ChickenNuget822" target="_blank">
         <ion-icon name="logo-xbox"></ion-icon>
       </a>
-
+  
       <a class="social" href="https://www.youtube.com/channel/UCORvL_etj1agiFdXrmos_fg" target="_blank">
         <ion-icon name="logo-youtube"></ion-icon>
       </a>
-
+  
       <a class="social" href="https://mail.google.com/mail/?view=cm&fs=1&to=johaanp2008@gmail.com" target="_blank">
         <ion-icon name="mail"></ion-icon>
       </a>
-
+  
       <!-- add More Social Links here--->
     </div>
-
-    
-    <!--Addons-->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <!--add more addons here-->
+    <!--Footer Content-->
   </body>
 </html>
