@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Metadata, Page Title and Page Icon-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Games</title>
+    <link rel="icon" type="image/png" href="https://johaansolo.github.io/Johaan/Assets/Local/Icon.png">
+    <!--Metadata, Page Title and Page Icon-->
+  
+    <!--Addons-->
+    <script src="https://Johaansolo.github.io/Johaan/Page_Projects/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+    <script src="p5.play.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-database.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!--Addons-->
+
+    <!--Firebase-->
+    <script>
+      const firebaseConfig = {
+        apiKey: "AIzaSyAm2x1M7xvMN9_IRIUQC3GlHoeKrHTRNzs",
+        authDomain: "website-67ae3.firebaseapp.com",
+        databaseURL: "https://website-67ae3-default-rtdb.firebaseio.com",
+        projectId: "website-67ae3",
+        storageBucket: "website-67ae3.appspot.com",
+        messagingSenderId: "807032974119",
+        appId: "1:807032974119:web:fb63f7cbacc5fcc3399702",
+        measurementId: "G-FZ8TTX4MTV"
+      };
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <!--Firebase-->
+
+    <!--Style Sheet-->
+    <link rel="stylesheet" type="text/css" href="https://Johaansolo.github.io/Johaan/Local/style.css">
+    <!--Style Sheet-->
+<style>
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #181818;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+</style>
+</head>
+<body>
+
+    <!--Header Content-->
+    <div class="header">
+      <h1>Johaan Paul</h1>
+    </div>
+    <!--Header Content-->
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Home')">Home</button>
+  <button class="tablinks" onclick="openCity(event, 'AboutMe')">About Me</button>
+  <button class="tablinks" onclick="openCity(event, 'Projects')">My Projects</button>
+</div>
+
+<div id="Home" class="tabcontent">
+    <!--Main Content-->
+    <img src="https://johaansolo.github.io/Johaan/Assets/Home/ProfilePicture1.5.jpg" class="Home-PFP" width=25%>
+    <br/>
+
+    <div class="Home-Blurb">
+      <h2>Home Page</h2>
+      <h3>Hey my names Is Johaan,<br/>
+        And this is my Website. This is where I post most of the Games I make. If you would like to see all my Games more than what I've posted here, go on over to my <a class="link" href="https://github.com/JohaanSolo">GitHub</a> page where I post everything I make, sometimes more than just games. I know a little bit of Html and some Javascript and the basic functions of Python. I try my best to experiment and learn more of these languages. If you wanna know more about me head over to the <a class="link" href="https://johaansolo.github.io/Johaan/Page_Aboutme">About Me</a> page, or if you wanna try out some of my games head over to The <a class="link" href="https://johaansolo.github.io/Johaan/Page_Projects">Games</a> page. A Feedback page is coming soon, But for now if you have any suggestions feel free to DM or message me on any of the social links I have below.<br/>
+        Thanks For Visiting My Website.<br/><br/>
+        Note: This Website is not complete is not complete.
+      </h3>
+    </div>
+    <!--Main Content-->
+</div>
+
+
+<div id="AboutMe" class="tabcontent">
+
+    <!--Main Content-->
+    <div class="AboutMe-Blurb">
+        <h2>About Me</h2>
+        <h3>Hi My name is Johaan, And im a 14 Year old kid, I Study as a Year 10 at Roncalli Collage, I dont know what to put on here</h3>
+    </div>
+    <!--Main Content-->
+</div>
+
+<div id="Projects" class="tabcontent">
+
+    <!--Main Content-->
+    <div class="Projects-Blurb">
+      <h2>My Game library</h2>
+      <p>Hey This is the Games pages,<br/>
+        This is where I post most of my games. My games use libraries like p5.js, p5.play.js, sound.p5.js, matter.js, Etc. Most of my games are just experiments to see what These libraries, JS and Html can do. So go click on one of the games you like and start playing.
+</p>
+    </div>
+    <br/><br/>
+    <div class="games"></div>
+
+    <!--This Is the Add Game Template->
+      
+    <div class="gameName"><h2>Enter The Game Name Here</h2></div>
+    <div class="Create A Class Name For Your Game Used For CSS Styling">
+      <a href="Add Redirect URL Here"><img src="Add Game Display Image URL Here" width=60% ></a>
+    </div>
+    <div class="aboutGame"><h4>Write About The Game Here</h4></div>
+
+    <--This Is the Add Game Template-->
+
+    <div class="gameName"><h2>The Invasion Of Earth</h2></div>
+    <div class="TheInvasionOfEarth">
+      <a href="https://johaansolo.github.io/The-Invasion-Of-Earth-2/"><img src="https://johaansolo.github.io/Johaan/Assets/Projects/Icons/The-Invasion-Of-Earth.PNG" width=60% ></a>
+    </div>
+    <div class="aboutGame"><h4>About The Game</h4></div>
+
+    <br/>
+
+    <div class="gameName"><h2>Oli Vs Pollution</h2></div>
+    <div class="OliVsPllotion">
+      <a href="https://johaansolo.github.io/Oli-Vs.-Pollution-3/"><img src="https://johaansolo.github.io/Johaan/Assets/Projects/Icons/Oli-Vs-Polution.png" width=60% ></a>
+    </div>
+    <div class="aboutGame"><h4>About The Game</h4></div>
+
+    <br/>
+    
+    <div class="gameName"><h2>Newtons Cradle</h2></div>
+    <div class=".">
+      <a href="https://johaansolo.github.io/Newtons-Cradle/"><img src="https://johaansolo.github.io/Johaan/Assets/Projects/Icons/Neutons-Cradle.PNG" width=60% ></a>
+    </div>
+    <div class="aboutGame"><h4>About The Game</h4></div>
+
+    <br/>
+
+    <div class="gameName"><h2>Blower Pipe</h2></div>
+    <div class=".">
+      <a href="https://johaansolo.github.io/Johaan/Page_Projects/Projects/Blower-Pipe/"><img src="https://johaansolo.github.io/Johaan/Assets/Projects/Icons/Blower-Pipe.png" width=60% ></a>
+    </div>
+    <div class="aboutGame"><h4>About The Game</h4></div>
+
+    <br/>
+
+    <div class="gameName"><h2> Crumbled Paper</h2></div>
+    <div class=".">
+      <a href="https://johaansolo.github.io/Crumbled-Paper/"><img src="https://johaansolo.github.io/Johaan/Assets/Projects/Icons/Crumbled-Paper.PNG" width=60% ></a>
+    </div>
+    <div class="aboutGame"><h4>About The Game</h4></div>
+
+    <br/>
+
+    <div class="gameName"><h2>Cut Your Fruits</h2></div>
+    <div class=".">
+      <a href="https://johaansolo.github.io/Cut-your-fruits/"><img src="https://johaansolo.github.io/Johaan/Assets/Projects/Icons/Cut-Your-Fruits.PNG" width=60% ></a>
+    </div>
+    <div class="aboutGame"><h4>About The Game</h4></div>
+
+    <br/>
+    <div class="gameName"><h2>Cycle Race</h2></div>
+    <div class=".">
+      <a href="https://johaansolo.github.io/Cycle-Race/"><img src="https://johaansolo.github.io/Johaan/Assets/Projects/Icons/Cycle-Race.PNG" width=60% ></a>
+    </div>
+    <div class="aboutGame"><h4>About The Game</h4></div>
+
+    <br/>
+
+    <div class="gameName"><h2>Robby The Robber</h2></div>
+    <div class=".">
+      <a href="https://johaansolo.github.io/Device-Compatable-Game/"><img src="https://johaansolo.github.io/Johaan/Assets/Projects/Icons/Robby-The-Robber.PNG" width=60% ></a>
+    </div>
+    <div class="aboutGame"><h4> Robby The Robber is an infinte runner game </h4></div>
+
+    <br/>
+
+    <div class="gameName"><h2>Epic Archery</h2></div>
+    <div class="epicArchery">
+      <a href="https://johaansolo.github.io/Epic-Archery-5/"><img src="https://johaansolo.github.io/Johaan/Assets/Projects/Icons/" width=60% ></a>
+    </div>
+    <div class="aboutGame"><h4>In Epic Archery Ive tryed To experiment with the Library <a href="https://matter.js" target="_blank">Matter.JS</a>.<br>Its not amazing and a bit glichy but it works (kind of).<br>The goal of Epic Archery to defeat the A.I. before it defeats you.<br>You Have 3 Lives And so does the A.I..<br>Everytime you get hit you lose a life and everytime you hit the A.I. it loses one life.</h4></div>
+
+    <br/>
+
+    <div class="gameName"><h2>Kangaroo Run</h2></div>
+    <div class="kangarooRun">
+      <a href="https://johaansolo.github.io/Kangaroo-2/"><img src="https://johaansolo.github.io/Johaan/Assets/Projects/Icons/Kangaroo-Race.PNG" width=60% ></a>
+    </div>
+    <div class="aboutGame"><h4>Kangaroo Run is one of the few games that (to date) I've made and fit to your intire screen<br>The aim of Kangaroo Run is to get the highest score you can.<br>You're score is partaly increased when ever you pick up a bush (i dont kno wwhy i made it bushes).<br>And the game is over when ever you hit a rock.</h4></div>
+    
+    <br/>
+
+    <div class="gameName"><h2>Shooting Range</h2></div>
+    <div class="shootingRange">
+      <a href="https://johaansolo.github.io/Shooting-Range-2/"><img src="https://johaansolo.github.io/Johaan/Assets/Projects/Icons/Shooting-Range.PNG" width=60% ></a>
+    </div>
+    <div class="aboutGame"><h4>Shooting Range is a liitle game I made as I started out coding.<br>In Shooting Range your goal is to shoot as many balls as you can,<br>Each time you shoot down a ball your score increases.<br>You have three lifes, each time a ball hits the back board you losse one life.<br>If your life is 0 as you may expect the game is over.</h4></div>
+    
+    <!-- add more games here-->
+    </div>
+    <!--Main Content-->
+</div>
+
+
+    <!--Footer Content-->
+    <div id="footer">
+      <hr width=100%>
+    </div>
+    <div id="footer-content">
+  
+      <a class="social" href="https://discord.gg/vQTZpmcA" target="_blank">
+        <ion-icon name="logo-discord"></ion-icon>
+      </a>
+  
+      <a class="social" href="https://www.facebook.com/JohaanPaul1234/" target="_blank">
+        <ion-icon name="logo-facebook"></ion-icon>
+      </a>
+  
+      <a class="social" href="https://github.com/JohaanSolo" target="_blank">
+        <ion-icon name="logo-github"></ion-icon>
+      </a>
+  
+      <a class="social" href="https://www.instagram.com/johaan_paul/" target="_blank">
+        <ion-icon name="logo-instagram"></ion-icon>
+      </a>
+  
+      <a class="social" href="https://steamcommunity.com/profiles/76561199037617555/" target="_blank">
+        <ion-icon name="logo-steam"></ion-icon>
+      </a>
+  
+      <a class="social" href="https://www.tiktok.com/@thedeadlyjoe" target="_blank">
+        <ion-icon name="logo-tiktok"></ion-icon>
+      </a>
+  
+      <a class="social" href="https://www.twitch.tv/johaan_solo" target="_blank">
+        <ion-icon name="logo-twitch"></ion-icon>
+      </a>
+  
+      <a class="social" href="https://twitter.com/paul_johaan" target="_blank">
+        <ion-icon name="logo-twitter"></ion-icon>
+      </a>
+  
+      <a class="social" href="https://api.whatsapp.com/send?phone=64224240565" target="_blank">
+        <ion-icon name="logo-whatsapp"></ion-icon>
+      </a>
+  
+      <a class="social" href="https://account.xbox.com/en-us/profile?gamertag=ChickenNuget822" target="_blank">
+        <ion-icon name="logo-xbox"></ion-icon>
+      </a>
+  
+      <a class="social" href="https://www.youtube.com/channel/UCORvL_etj1agiFdXrmos_fg" target="_blank">
+        <ion-icon name="logo-youtube"></ion-icon>
+      </a>
+  
+      <a class="social" href="https://mail.google.com/mail/?view=cm&fs=1&to=johaanp2008@gmail.com" target="_blank">
+        <ion-icon name="mail"></ion-icon>
+      </a>
+  
+      <!-- add More Social Links here--->
+    </div>
+    <!--Footer Content-->
+    
+    
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+   
+</body>
+</html> 
