@@ -37,7 +37,7 @@ h1:hover {
 /*Styles For The Links To The Pages*/
 .pages{
   padding: 10px 15px;
-  font-size:x-large;
+  font-size:large;
   text-align: center;
   cursor: pointer;
   outline: none;
