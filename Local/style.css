@@ -15,9 +15,7 @@ html{
 /*All Pages*/
 
 /*Header*/
-.header{
-  /*No Styles Yet*/
-}
+
 
 
 /*Styles For The Title (My Name / All h1 text)*/
@@ -78,13 +76,15 @@ a:hover {
 }
 
 
-/*Styles For Social Links*/
-.footer{
-  margin-bottom: 0px;
+/*Styles for the Blurb(The Main Text)*/
+.Blurb {
+  color: #ffffff;
 }
 
-.footer-content{
-  /*Every thing Bellow The Footer Line*/
+
+/*Styles For Social Links*/
+.footer{
+  bottom: 0rem;
 }
 
 .social{
@@ -103,44 +103,3 @@ ion-icon {
   font-size: 32px;
 }
 
-
-/*Styles For Individual Pages*/
-/*Home-Page*/
-.Home-PFP {
-  margin-left:2%;
-  float:right;
-}
-
-.Home-Blurb {
-  color: #ffffff;
-  width: 75%;
-  margin: 0;
-}
-
-
-
-/*AboutMe-Page*/
-.AboutMe-Blurb {
-  color: #ffffff;
-}
-
-
-
-/*Projects-Page*/
-.Projects-Blurb {
-  color: #ffffff;
-}
-
-
-
-/*Test-Page*/
-.Test-Blurb {
-  color: white;
-}
-
-
-
-/*Some Styles For Projects Page Divs .gameName, .aboutGame and .games*/
-.gameName, .aboutGame, .games{
-  color: #ffffff;
-}
