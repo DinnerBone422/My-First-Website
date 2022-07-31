@@ -79,6 +79,14 @@ a:hover {
 
 
 /*Styles For Social Links*/
+.footer{
+  margin-bottom: 0px;
+}
+
+.footer-content{
+  /*Every thing Bellow The Footer Line*/
+}
+
 .social{
   color: #aaaaaa;
   transition: color 0.5s;
@@ -94,11 +102,6 @@ a:hover {
 ion-icon {
   font-size: 32px;
 }
-
-.footer-content {
-  /*Every thing Bellow The Footer Line*/
-}
-
 
 
 /*Styles For Individual Pages*/
