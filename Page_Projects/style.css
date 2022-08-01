@@ -7,9 +7,12 @@
     float: left;
     width: 25%;
     padding: 10px;
-    background-color:#181818
+    background-color:#aaaaaa
 }
-
+.game:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
 /* Clear floats after the columns */
 .games:after {
     content: "";
