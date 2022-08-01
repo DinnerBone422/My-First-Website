@@ -7,7 +7,8 @@
     float: left;
     width: 25%;
     padding: 10px;
-    background-color:#aaaaaa
+    background-color:#aaaaaa;
+    color: #ffffff;
 }
 .game:hover {
     background-color: #ffffff;
