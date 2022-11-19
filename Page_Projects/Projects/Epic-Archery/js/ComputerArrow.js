@@ -9,7 +9,7 @@ class ComputerArrow {
     this.width = width;
     this.height = height;
     this.body = Bodies.rectangle(x, y, this.width, this.height, options);
-    this.image = loadImage("./assets/arrow.png");
+    this.image = loadImage("assets/arrow.png");
     this.isRemoved = false;
     this.archerAngle = archerAngle;
     this.velocity = p5.Vector.fromAngle(archerAngle);
