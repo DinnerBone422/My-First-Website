@@ -4,22 +4,22 @@ var backGround, man, stonesGroup, trashsGroup, invisibleGround, gameOver, restar
 var distance, speed, score, gameState, play, end;
 
 function preload() {
-  backgroundImg = loadImage("/Page_Projectss/Projects/Oli-Vs.-Pollution/assets/full_background.png");
+  backgroundImg = loadImage("assets/full_background.png");
 
-  gameOverImg = loadImage("/Page_Projectss/Projects/Oli-Vs.-Pollution/assets/gameOver.png");
-  restartImg = loadImage("/Page_Projectss/Projects/Oli-Vs.-Pollution/assets/restart.png");
+  gameOverImg = loadImage("assets/gameOver.png");
+  restartImg = loadImage("assets/restart.png");
 
-  stoneImg = loadImage("/Page_Projectss/Projects/Oli-Vs.-Pollution/assets/stone.png");
-  trash1Img = loadImage("/Page_Projectss/Projects/Oli-Vs.-Pollution/assets/Trash 1.jfif");
-  trash2Img = loadImage("/Page_Projectss/Projects/Oli-Vs.-Pollution/assets/Trash 2.png");
+  stoneImg = loadImage("assets/stone.png");
+  trash1Img = loadImage("assets/Trash 1.jfif");
+  trash2Img = loadImage("assets/Trash 2.png");
 
-  runningManImg = loadAnimation("/Page_Projectss/Projects/Oli-Vs.-Pollution/assets/Running Man Frame 1.png", "https://johaansolo.github.io/Oli-Vs.-Pollution-3/assets/Running Man Frame 2.png", "https://johaansolo.github.io/Oli-Vs.-Pollution-3/assets/Running Man Frame 3.png", "https://johaansolo.github.io/Oli-Vs.-Pollution-3/assets/Running Man Frame 4.png");
-  collidedManImg = loadAnimation("/Page_Projectss/Projects/Oli-Vs.-Pollution/assets/Running Man Frame 2.png");
+  runningManImg = loadAnimation("assets/Running Man Frame 1.png", "assets/Running Man Frame 2.png", "assets/Running Man Frame 3.png", "assets/Running Man Frame 4.png");
+  collidedManImg = loadAnimation("assets/Running Man Frame 2.png");
 
-  collidedSound = loadSound("/Page_Projectss/Projects/Oli-Vs.-Pollution/assets/collided.wav");
-  jumpSound = loadSound("/Page_Projectss/Projects/Oli-Vs.-Pollution/assets/jump.wav");
-  //trashSound = loadSound("/Page_Projectss/Projects/Oli-Vs.-Pollution/assets/picked_Trash.mp3");
-  pantingSound = loadSound("/Page_Projectss/Projects/Oli-Vs.-Pollution/assets/panting.mp3");
+  collidedSound = loadSound("assets/collided.wav");
+  jumpSound = loadSound("assets/jump.wav");
+  //trashSound = loadSound("assets/picked_Trash.mp3");
+  pantingSound = loadSound("assets/panting.mp3");
 
 }
 
