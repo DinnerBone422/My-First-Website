@@ -1,8 +1,4 @@
-* {
-    box-sizing: border-box;
-}
-  
-/* Create four equal columns that floats next to each other */
+ /* Create four equal columns that floats next to each other */
 .game {
     width: 25%;
     padding: 10px;
