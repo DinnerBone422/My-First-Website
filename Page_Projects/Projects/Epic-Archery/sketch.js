@@ -13,7 +13,7 @@ var playerArcherLife = 3;
 var computerArcherLife = 3;
 var computerCollision
 function preload() {
-  backgroundImg = loadImage("/assets/background.gif");
+  backgroundImg = loadImage("assets/background.gif");
 }
 
 function setup() {
