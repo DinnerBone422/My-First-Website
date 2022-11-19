@@ -8,7 +8,7 @@ class Computer {
 
     this.width = width;
     this.height = height;
-    this.image = loadImage("./assets/player.png");
+    this.image = loadImage("assets/player.png");
 
     this.life1 = "green";
     this.life2 = "green";
