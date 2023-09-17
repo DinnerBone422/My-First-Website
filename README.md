@@ -6,3 +6,6 @@ Below are the links to my websites
 https://www.johaan.tk/Page_Home/ This Website was made with entirly my code.
 https://www.johaan.tk/Page_Website/ This Website was not made with entirly my code.
 Website Created By: Johaan Paul.
+
+
+This Website Is old and not kept upto date, The things on here are not checked. If yo want to see my new website goto https://www.johaan.org/
